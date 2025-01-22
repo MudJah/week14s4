@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
-        uses: action/ckeckout@v4
+        uses: actions/ckeckout@v4
       - name: Build Website
         run: |
           npx parcel build "./src/index.html" --dist-dir "./dist" --public-url "./"
